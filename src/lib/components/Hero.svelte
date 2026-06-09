@@ -12,13 +12,12 @@
 		</h1>
 		<p class="hero__dek">
 			In spring 2025, the Hertie School asked its alumni how they look back on their studies,
-			where their careers have taken them, and how connected they still feel to the School. A
-			record <strong>441 graduates</strong> from every programme and every class since 2007
+			where their careers have taken them, and how connected they still feel to the School. <strong>441 graduates</strong> from every programme and every class since 2007
 			replied. Here is what they told us.
 		</p>
 		<p class="hero__byline">
 			By the <strong>Alumni Affairs team</strong> with the <strong>Data Science Lab</strong> ·
-			Berlin, 2025
+			Berlin, 2026
 		</p>
 	</div>
 
