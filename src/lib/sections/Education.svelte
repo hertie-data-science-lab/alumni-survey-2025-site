@@ -3,7 +3,6 @@
 	import Section from '$lib/components/Section.svelte';
 	import Figure from '$lib/components/Figure.svelte';
 	import DivergingFigure from '$lib/components/DivergingFigure.svelte';
-	import GroupToggle from '$lib/components/GroupToggle.svelte';
 	import RankedBars from '$lib/components/charts/RankedBars.svelte';
 	import KeyFigure from '$lib/components/KeyFigure.svelte';
 	import Takeaway from '$lib/components/Takeaway.svelte';
@@ -23,13 +22,6 @@
 		.sort((a, b) => b.mean - a.mean)
 		.map((v) => ({ label: v.programme, value: Math.round(v.mean * 10) / 10, color: PROGRAMME_COLORS[v.programme] }));
 
-	let courseProg = $state('MPP');
-	const courseOpts = [
-		{ id: 'MPP', label: 'MPP' },
-		{ id: 'MIA', label: 'MIA' },
-		{ id: 'MDS', label: 'MDS' }
-	];
-	const courseItems = $derived(education.courses[courseProg].items.map((c) => ({ label: c.label, value: c.pct })));
 </script>
 
 <Section id="education" num="03" kicker="Education" title="The Hertie experience">
@@ -63,34 +55,13 @@
 		</div>
 	</div>
 
-	<div class="cols-2">
-		<Figure
-			title="Most would choose the Hertie School again"
-			subtitle="Share saying they are (rather or very) likely to choose it again"
-			n={education.choose_again[0].n}
-			note="EMPA graduates are most likely to choose their programme again; MIA and MDS least."
-		>
-			<RankedBars items={chooseItems} suffix="%" marginLeft={190} rowHeight={40} />
-		</Figure>
-		<Figure
-			title="Quality of teaching, by programme"
-			subtitle="Average rating on a 1–5 scale"
-			note="EMPA and MPP rate teaching highest; the small MDS group lowest."
-		>
-			<RankedBars items={teachingItems} domainMax={5} marginLeft={64} rowHeight={42} format={(v) => v.toFixed(1)} />
-		</Figure>
-	</div>
-
 	<Figure
-		title="The courses alumni still find useful"
-		subtitle="Share of {courseProg} alumni naming each course among their most useful"
-		n={education.courses[courseProg].denom}
-		note="Respondents could name up to three courses."
+		title="Most would choose the Hertie School again"
+		subtitle="Share saying they are (rather or very) likely to choose it again"
+		n={education.choose_again[0].n}
+		note="EMPA graduates are most likely to choose their programme again; MIA and MDS least."
 	>
-		{#snippet controls()}
-			<GroupToggle bind:value={courseProg} options={courseOpts} label="Programme" />
-		{/snippet}
-		<RankedBars items={courseItems} suffix="%" marginLeft={250} rowHeight={32} color="var(--prog-empa)" />
+		<RankedBars items={chooseItems} suffix="%" marginLeft={190} rowHeight={40} />
 	</Figure>
 
 	<Takeaway>

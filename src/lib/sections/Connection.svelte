@@ -1,13 +1,9 @@
 <script>
 	import connection from '$lib/data/connection.json';
 	import Section from '$lib/components/Section.svelte';
-	import Figure from '$lib/components/Figure.svelte';
 	import DivergingFigure from '$lib/components/DivergingFigure.svelte';
-	import RankedBars from '$lib/components/charts/RankedBars.svelte';
 	import KeyFigure from '$lib/components/KeyFigure.svelte';
 	import Takeaway from '$lib/components/Takeaway.svelte';
-
-	const communityItems = connection.community.map((c) => ({ label: c.label, value: c.pct }));
 </script>
 
 <Section id="connection" num="02" kicker="Connection" title="A lasting bond with the School" tone="warm">
@@ -54,14 +50,6 @@
 			</p>
 		</div>
 	</div>
-
-	<Figure
-		title="The bonds are personal as much as professional"
-		subtitle="Share of alumni who agree with each statement"
-		n={connection.community[0].n}
-	>
-		<RankedBars items={communityItems} suffix="%" marginLeft={260} color="var(--prog-empa)" />
-	</Figure>
 
 	<Takeaway>
 		<p>

@@ -36,7 +36,13 @@
 		margin-top: 0.5rem;
 		font-size: 0.92rem;
 		line-height: 1.35;
-		color: var(--ink-soft);
+		color: var(--red);
 		max-width: 22ch;
+	}
+	.kf--ink .kf__label {
+		color: var(--ink-soft);
+	}
+	.kf--blue .kf__label {
+		color: var(--blue);
 	}
 </style>

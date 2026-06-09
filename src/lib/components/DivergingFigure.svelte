@@ -10,7 +10,7 @@
 		legendLabels = null,
 		note = '',
 		threshold = 7,
-		defaultView = 'programme'
+		defaultView = 'all'
 	} = $props();
 
 	let view = $state(defaultView);

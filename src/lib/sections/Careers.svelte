@@ -15,10 +15,12 @@
 		.filter((d) => d.value > 0)
 		.sort((a, b) => b.value - a.value);
 
+	// Limited to 2023/24 graduates so programmes are comparable: mixing cohorts
+	// confounds pay with seniority (e.g. EMPA students are already mid-career).
 	const salaryRows = PROGRAMME_ORDER.map((p) => ({
 		group: p,
-		first: career.salary_mean.all.first[p],
-		current: career.salary_mean.all.current[p]
+		first: career.salary_mean.recent.first[p],
+		current: career.salary_mean.recent.current[p]
 	}));
 
 	const salaryDistGroups = career.salary_current.groups.filter((g) => g.dim === 'all' || g.dim === 'programme');
@@ -69,9 +71,9 @@
 
 	<div class="cols-2">
 		<Figure
-			title="Salaries climb from first job to current job"
-			subtitle="Average yearly gross salary, in thousands of euros"
-			note="Reported in ranges, converted to range midpoints. EMPA alumni are typically already mid-career."
+			title="First-job and current-job pay, recent graduates"
+			subtitle="2023–24 cohorts · average yearly gross salary (€000s)"
+			note="Limited to the 2023–24 cohorts so programmes are comparable; pay reported in ranges, converted to midpoints. These recent-cohort samples are small — read with caution."
 		>
 			<Dumbbell data={salaryRows} />
 		</Figure>
@@ -107,7 +109,7 @@
 			n={career.found.current.n}
 			note="At least 12% found their current employer through a Hertie School channel."
 		>
-			<RankedBars items={foundItems} suffix="%" marginLeft={210} rowHeight={28} color="var(--prog-empa)" />
+			<RankedBars items={foundItems} suffix="%" marginLeft={210} rowHeight={42} color="var(--prog-empa)" wrap />
 		</Figure>
 		<Figure
 			title="What mattered for getting hired"
