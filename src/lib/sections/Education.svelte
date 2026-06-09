@@ -61,7 +61,7 @@
 
 	<Figure
 		title="Most would choose the Hertie School again"
-		subtitle="Share saying they are (rather or very) likely to choose it again"
+		subtitle="Share at least 50/50 likely to choose it again"
 		n={education.choose_again[0].n}
 	>
 		<RankedBars items={chooseItems} suffix="%" marginLeft={190} rowHeight={40} />

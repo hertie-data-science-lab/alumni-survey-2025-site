@@ -58,20 +58,40 @@
 		</div>
 	</div>
 
-	<Figure title="Alumni work across every sector" subtitle="Sector of current employment, by programme">
-		<SectorDonuts
-			groups={career.sector_current.groups.filter((g) => g.group !== 'All alumni')}
-			levels={career.sector_current.levels}
-			colors={SECTOR_COLORS}
-		/>
-	</Figure>
+	<div class="cols-2">
+		<Figure title="Alumni work across every sector" subtitle="Sector of current employment, by programme">
+			<SectorDonuts
+				groups={career.sector_current.groups.filter((g) => g.group !== 'All alumni')}
+				levels={career.sector_current.levels}
+				colors={SECTOR_COLORS}
+			/>
+		</Figure>
+		<div class="aside-prose">
+			<p>
+				Hertie graduates work across all four sectors, but each programme leans toward its
+				focus. EMPA alumni cluster in the public sector and MIA graduates lean private, while
+				MPP and MDS graduates are spread most evenly across the four.
+			</p>
+		</div>
+	</div>
 
-	<Figure
-		title="First-job and current-job pay, recent graduates"
-		subtitle="2023–24 cohorts · average yearly gross salary (€000s)"
-	>
-		<Dumbbell data={salaryRows} />
-	</Figure>
+	<div class="cols-2">
+		<Figure
+			title="First-job and current-job pay, recent graduates"
+			subtitle="2023–24 cohorts · average yearly gross salary (€000s)"
+		>
+			<Dumbbell data={salaryRows} />
+		</Figure>
+		<div class="aside-prose">
+			<p>
+				Limiting the comparison to the most recent graduates keeps time in the labour market
+				roughly equal across programmes. Even within a year or two, pay already climbs from the
+				first job to the current one. EMPA alumni — often already mid-career — earn the most,
+				while MDS graduates start ahead of their MPP and MIA peers. These recent-cohort groups
+				are small, so the figures are best read as indicative.
+			</p>
+		</div>
+	</div>
 
 	<div class="cols-2">
 		<DivergingFigure

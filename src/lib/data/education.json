@@ -125,27 +125,27 @@
   "choose_again": [
     {
       "label": "Hertie School",
-      "likely": 77,
+      "likely": 90,
       "n": 426
     },
     {
       "label": "MPP",
-      "likely": 76,
+      "likely": 92,
       "n": 291
     },
     {
       "label": "MIA",
-      "likely": 59,
+      "likely": 80,
       "n": 71
     },
     {
       "label": "MDS",
-      "likely": 60,
+      "likely": 73,
       "n": 15
     },
     {
       "label": "EMPA",
-      "likely": 87,
+      "likely": 96,
       "n": 53
     }
   ],
