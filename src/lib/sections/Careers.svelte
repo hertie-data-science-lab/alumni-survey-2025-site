@@ -4,11 +4,11 @@
 	import Figure from '$lib/components/Figure.svelte';
 	import DivergingFigure from '$lib/components/DivergingFigure.svelte';
 	import RankedBars from '$lib/components/charts/RankedBars.svelte';
-	import StackedShareBars from '$lib/components/charts/StackedShareBars.svelte';
+	import SectorDonuts from '$lib/components/charts/SectorDonuts.svelte';
 	import Dumbbell from '$lib/components/charts/Dumbbell.svelte';
 	import KeyFigure from '$lib/components/KeyFigure.svelte';
 	import Takeaway from '$lib/components/Takeaway.svelte';
-	import { SECTOR_COLORS, BLUES, PROGRAMME_ORDER, SALARY_LABELS } from '$lib/colors.js';
+	import { SECTOR_COLORS, PROGRAMME_ORDER } from '$lib/colors.js';
 
 	const employmentItems = career.employment.levels
 		.map((l, i) => ({ label: l, value: career.employment.pct[i] }))
@@ -22,9 +22,6 @@
 		first: career.salary_mean.recent.first[p],
 		current: career.salary_mean.recent.current[p]
 	}));
-
-	const salaryDistGroups = career.salary_current.groups.filter((g) => g.dim === 'all' || g.dim === 'programme');
-	const salaryBlues = [BLUES[1], BLUES[3], BLUES[4], BLUES[5], BLUES[7]];
 
 	const foundItems = career.found.current.items.map((d) => ({ label: d.label, value: d.pct }));
 	const hiringItems = career.hiring.map((d) => ({ label: d.label, value: d.pct }));
@@ -52,7 +49,7 @@
 			<RankedBars items={employmentItems} suffix="%" marginLeft={140} rowHeight={32} />
 		</Figure>
 		<div class="aside-prose">
-			<KeyFigure prefix="~" value={career.employment.pct[0] + career.employment.pct[1] + career.employment.pct[2] + career.employment.pct[4]} unit="%" label="are in full-time, part-time, self- or internship employment" />
+			<KeyFigure value={career.employment.pct[0] + career.employment.pct[1] + career.employment.pct[2] + career.employment.pct[4]} unit="%" label="are in full-time, part-time, self- or internship employment" />
 			<p>
 				Roughly three-quarters work full-time. A small share — around one in fifteen — report
 				being unemployed and seeking work, a group the School aims to reach with continued career
@@ -61,29 +58,20 @@
 		</div>
 	</div>
 
-	<Figure
-		title="Alumni work across every sector"
-		subtitle="Sector of current employment, by programme (% within each group)"
-		note="EMPA graduates cluster in the public sector; MIA graduates lean private. MPP and MDS are the most balanced."
-	>
-		<StackedShareBars groups={career.sector_current.groups} levels={career.sector_current.levels} colors={SECTOR_COLORS} />
+	<Figure title="Alumni work across every sector" subtitle="Sector of current employment, by programme">
+		<SectorDonuts
+			groups={career.sector_current.groups.filter((g) => g.group !== 'All alumni')}
+			levels={career.sector_current.levels}
+			colors={SECTOR_COLORS}
+		/>
 	</Figure>
 
-	<div class="cols-2">
-		<Figure
-			title="First-job and current-job pay, recent graduates"
-			subtitle="2023–24 cohorts · average yearly gross salary (€000s)"
-			note="Limited to the 2023–24 cohorts so programmes are comparable; pay reported in ranges, converted to midpoints. These recent-cohort samples are small — read with caution."
-		>
-			<Dumbbell data={salaryRows} />
-		</Figure>
-		<Figure
-			title="Two-thirds now earn over €60k"
-			subtitle="Current gross salary band (% within each group)"
-		>
-			<StackedShareBars groups={salaryDistGroups} levels={career.salary_current.levels} colors={salaryBlues} legendLabels={SALARY_LABELS} />
-		</Figure>
-	</div>
+	<Figure
+		title="First-job and current-job pay, recent graduates"
+		subtitle="2023–24 cohorts · average yearly gross salary (€000s)"
+	>
+		<Dumbbell data={salaryRows} />
+	</Figure>
 
 	<div class="cols-2">
 		<DivergingFigure
@@ -107,7 +95,6 @@
 			title="How alumni found their current job"
 			subtitle="% naming each channel"
 			n={career.found.current.n}
-			note="At least 12% found their current employer through a Hertie School channel."
 		>
 			<RankedBars items={foundItems} suffix="%" marginLeft={210} rowHeight={42} color="var(--prog-empa)" wrap />
 		</Figure>
@@ -115,7 +102,6 @@
 			title="What mattered for getting hired"
 			subtitle="Share rating each factor important for their first job"
 			n={career.job_satisfaction.groups[0].n}
-			note="Skills and experience lead; grades and thesis topic matter least."
 		>
 			<RankedBars items={hiringItems} suffix="%" marginLeft={230} rowHeight={28} color="var(--red)" />
 		</Figure>

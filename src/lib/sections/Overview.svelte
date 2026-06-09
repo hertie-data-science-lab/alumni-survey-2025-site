@@ -6,11 +6,14 @@
 	import LineTrend from '$lib/components/charts/LineTrend.svelte';
 	import { PROGRAMME_COLORS } from '$lib/colors.js';
 
-	const progItems = meta.programmes.map((p) => ({
-		label: p.code,
-		value: p.pct,
-		color: PROGRAMME_COLORS[p.code] ?? 'var(--ink-faint)'
-	}));
+	// Exclude PhD graduates — a very small group we do not break out or report.
+	const progItems = meta.programmes
+		.filter((p) => p.code !== 'PhD')
+		.map((p) => ({
+			label: p.code,
+			value: p.pct,
+			color: PROGRAMME_COLORS[p.code] ?? 'var(--ink-faint)'
+		}));
 	// Germany is the headline (56%); show the next most common countries so the
 	// international spread is legible rather than dwarfed by the German bar.
 	const countryItems = meta.residence_top.filter((c) => c.country !== 'Germany').map((c) => ({ label: c.country, value: c.n }));
@@ -35,7 +38,6 @@
 	<Figure
 		title="Participation has grown with each graduating class"
 		subtitle="Number of respondents by graduation year and programme"
-		note="MDS launched only recently, so it appears in the most recent years."
 	>
 		<LineTrend data={meta.prog_year} />
 	</Figure>
@@ -44,15 +46,13 @@
 		<Figure
 			title="Two in three respondents are MPP graduates"
 			subtitle="Share of respondents by programme"
-			note="Roughly mirrors the actual alumni population."
 		>
 			<RankedBars items={progItems} suffix="%" marginLeft={64} rowHeight={36} />
 		</Figure>
 
 		<Figure
 			title="Beyond Germany, alumni span the globe"
-			subtitle="Respondents by country of residence, excluding Germany (number of respondents)"
-			note="{meta.headline.germany}% live in Germany; the countries above are the next most common."
+			subtitle="Respondents by country of residence, excluding Germany"
 		>
 			<RankedBars items={countryItems} suffix="" marginLeft={120} rowHeight={28} color="var(--blue)" />
 		</Figure>

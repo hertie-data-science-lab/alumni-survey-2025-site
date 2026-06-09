@@ -8,13 +8,17 @@
 	import Takeaway from '$lib/components/Takeaway.svelte';
 	import { PROGRAMME_COLORS } from '$lib/colors.js';
 
-	const chooseItems = [...education.choose_again]
+	// Programmes ranked highest-first, with the overall Hertie School bar pinned
+	// to the bottom of the chart.
+	const chooseProgs = education.choose_again
+		.filter((d) => d.label !== 'Hertie School')
 		.sort((a, b) => b.likely - a.likely)
-		.map((d) => ({
-			label: d.label === 'Hertie School' ? 'The Hertie School (overall)' : d.label,
-			value: d.likely,
-			color: PROGRAMME_COLORS[d.label] ?? 'var(--ink)'
-		}));
+		.map((d) => ({ label: d.label, value: d.likely, color: PROGRAMME_COLORS[d.label] ?? 'var(--ink)' }));
+	const chooseHertie = education.choose_again.find((d) => d.label === 'Hertie School');
+	const chooseItems = [
+		...chooseProgs,
+		{ label: 'The Hertie School (overall)', value: chooseHertie.likely, color: 'var(--ink)' }
+	];
 
 	const teaching = education.aspects.find((a) => a.aspect.toLowerCase().includes('teaching'));
 	const teachingItems = teaching.values
@@ -59,7 +63,6 @@
 		title="Most would choose the Hertie School again"
 		subtitle="Share saying they are (rather or very) likely to choose it again"
 		n={education.choose_again[0].n}
-		note="EMPA graduates are most likely to choose their programme again; MIA and MDS least."
 	>
 		<RankedBars items={chooseItems} suffix="%" marginLeft={190} rowHeight={40} />
 	</Figure>

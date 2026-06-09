@@ -33,7 +33,7 @@
 			<div>
 				<h4>Contact</h4>
 				<p>
-					Alumni Affairs · <a href="mailto:alumni@hertie-school.org">alumni@hertie-school.org</a><br />
+					Alumni Affairs · <a href="mailto:alumnirelations@hertie-school.org">alumnirelations@hertie-school.org</a><br />
 					Friedrichstr. 180, 10117 Berlin
 				</p>
 			</div>

@@ -84,8 +84,8 @@
 				percentages, and present each question from several angles (all alumni, by programme, by
 				cohort). The analyses are descriptive: correlations, for instance between cohort and an
 				outcome, should not be read as causal. Cohorts are grouped into early (2007–2016), mid
-				(2017–2022) and recent (2023–2024) graduates, and PhD graduates are excluded from the
-				programme breakdowns because of their small number.
+				(2017–2022) and recent (2023–2024) graduates, and results focus on the four master's
+				programmes (MPP, MIA, MDS, EMPA).
 			</p>
 			<p class="methods__foot">
 				Figures in this interactive are computed from the latest anonymised data and may differ
