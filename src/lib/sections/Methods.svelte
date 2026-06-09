@@ -1,7 +1,6 @@
 <script>
 	import meta from '$lib/data/meta.json';
 	import Section from '$lib/components/Section.svelte';
-	import logo from '$lib/assets/alumni-survey-logo.png';
 
 	const fmtDate = (iso) =>
 		new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -94,9 +93,6 @@
 				Source: Hertie School Alumni Survey 2025.
 			</p>
 		</div>
-		<div class="methods__logo">
-			<img src={logo} alt="Hertie School Alumni Survey 2025" />
-		</div>
 	</div>
 </Section>
 
@@ -104,15 +100,6 @@
 	.methods {
 		display: grid;
 		gap: clamp(1.8rem, 4vw, 2.8rem);
-	}
-	.methods__logo {
-		text-align: center;
-		padding-top: 0.5rem;
-	}
-	.methods__logo img {
-		height: 56px;
-		width: auto;
-		max-width: 100%;
 	}
 	.statstrip div {
 		display: flex;

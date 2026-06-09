@@ -4,14 +4,6 @@
 
 <footer class="footer">
 	<div class="container footer__inner">
-		<div class="footer__brand">
-			<span class="footer__mark" aria-hidden="true">H</span>
-			<div>
-				<strong>Hertie School</strong>
-				<p>Alumni Survey 2025 — Report &amp; interactive summary</p>
-			</div>
-		</div>
-
 		<div class="footer__cols">
 			<div>
 				<h4>About this piece</h4>
@@ -57,37 +49,10 @@
 		display: grid;
 		gap: 2rem;
 	}
-	.footer__brand {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-	}
-	.footer__mark {
-		display: grid;
-		place-items: center;
-		width: 2.4rem;
-		height: 2.4rem;
-		border-radius: 7px;
-		background: var(--red);
-		color: #fff;
-		font-weight: 800;
-		font-size: 1.35rem;
-	}
-	.footer__brand strong {
-		color: #fff;
-		font-size: 1.1rem;
-	}
-	.footer__brand p {
-		margin: 0.1rem 0 0;
-		font-size: 0.85rem;
-		color: #a8a39c;
-	}
 	.footer__cols {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		gap: 1.8rem;
-		padding-top: 1.8rem;
-		border-top: 1px solid #3a3835;
 	}
 	.footer__cols h4 {
 		color: #fff;
