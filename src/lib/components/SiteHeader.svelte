@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import logo from '$lib/assets/alumni-survey-logo.png';
 
 	let { sections = [] } = $props();
 	let active = $state(sections[0]?.id ?? '');
@@ -31,12 +32,8 @@
 
 <header class="hdr" class:is-scrolled={scrolled}>
 	<div class="hdr__inner container">
-		<a class="hdr__brand" href="#top">
-			<span class="hdr__mark" aria-hidden="true">H</span>
-			<span class="hdr__brandtext">
-				<strong>Hertie School</strong>
-				<span>Alumni Survey 2025</span>
-			</span>
+		<a class="hdr__brand" href="#top" aria-label="Hertie School Alumni Survey 2025 — back to top">
+			<img class="hdr__logo" src={logo} alt="Hertie School Alumni Survey 2025" />
 		</a>
 
 		<nav class="hdr__nav" aria-label="Sections">
@@ -92,31 +89,15 @@
 		text-decoration: none;
 		color: var(--ink);
 	}
-	.hdr__mark {
-		display: grid;
-		place-items: center;
-		width: 1.9rem;
-		height: 1.9rem;
-		border-radius: 6px;
-		background: var(--red);
-		color: #fff;
-		font-weight: 800;
-		font-size: 1.1rem;
-		line-height: 1;
+	.hdr__logo {
+		display: block;
+		height: 34px;
+		width: auto;
 	}
-	.hdr__brandtext {
-		display: flex;
-		flex-direction: column;
-		line-height: 1.05;
-	}
-	.hdr__brandtext strong {
-		font-size: 0.98rem;
-		font-weight: 800;
-		letter-spacing: -0.01em;
-	}
-	.hdr__brandtext span {
-		font-size: 0.74rem;
-		color: var(--ink-muted);
+	@media (max-width: 480px) {
+		.hdr__logo {
+			height: 28px;
+		}
 	}
 	.hdr__nav {
 		display: flex;

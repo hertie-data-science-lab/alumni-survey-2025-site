@@ -59,13 +59,24 @@
 		</div>
 	</div>
 
-	<Figure
-		title="Most would choose the Hertie School again"
-		subtitle="Share at least 50/50 likely to choose it again"
-		n={education.choose_again[0].n}
-	>
-		<RankedBars items={chooseItems} suffix="%" marginLeft={190} rowHeight={40} />
-	</Figure>
+	<div class="cols-2">
+		<div class="aside-prose">
+			<p>
+				Looked at the other way, very few alumni would rule the Hertie School out. Counting
+				everyone who rates their odds at 50/50 or better, the large majority would consider
+				choosing it again — and at the overall level <strong>{education.choose_again.find((d) => d.label === 'Hertie School')?.likely}%</strong>
+				would. Enthusiasm runs highest among EMPA and MPP graduates, while MIA and MDS alumni
+				are more measured.
+			</p>
+		</div>
+		<Figure
+			title="Most would choose the Hertie School again"
+			subtitle="Share at least 50/50 likely to choose it again"
+			n={education.choose_again[0].n}
+		>
+			<RankedBars items={chooseItems} suffix="%" marginLeft={190} rowHeight={40} />
+		</Figure>
+	</div>
 
 	<Takeaway>
 		<p>

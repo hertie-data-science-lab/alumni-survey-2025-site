@@ -26,10 +26,10 @@
 		<div class="hero__figures">
 			<KeyFigure value={meta.n_respondents} label="alumni responded, across all programmes and cohorts since 2007" tone="ink" />
 			<KeyFigure value={h.positive_view} unit="%" label="hold a positive view of the Hertie School" />
-			<KeyFigure value={h.belonging} unit="%" label="feel a sense of belonging to the alumni community" />
+			<KeyFigure value={h.belonging} unit="%" label="feel a sense of belonging to the alumni community" tone="blue" />
 			<KeyFigure value={h.employed} unit="%" label="are employed, most of them full-time" />
-			<KeyFigure value={h.choose_again} unit="%" label="are at least 50/50 likely to choose the Hertie School again" />
-			<KeyFigure value={h.germany} unit="%" label="live in Germany — but alumni span every continent" tone="blue" />
+			<KeyFigure value={h.choose_again} unit="%" label="are at least 50/50 likely to choose the Hertie School again" tone="blue" />
+			<KeyFigure value={h.germany} unit="%" label="live in Germany — but alumni span every continent" tone="red" />
 		</div>
 	</div>
 </header>
