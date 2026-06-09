@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hertie">
+	<rect width="64" height="64" rx="10" fill="#aa2229" />
+	<path d="M19 16h7v13.2h12V16h7v32h-7V35.4H26V48h-7z" fill="#fff" />
+</svg>

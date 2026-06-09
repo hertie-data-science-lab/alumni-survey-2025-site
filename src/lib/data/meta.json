@@ -1,0 +1,358 @@
+{
+  "title": "Hertie School Alumni Survey 2025",
+  "fielded": {
+    "start": "2025-02-04",
+    "end": "2025-04-01"
+  },
+  "n_respondents": 441,
+  "n_analysis": 429,
+  "population": {
+    "total": 3200,
+    "contacted": 2977,
+    "response_rate": 15
+  },
+  "headline": {
+    "positive_view": 93,
+    "belonging": 71,
+    "employed": 91,
+    "choose_again": 77,
+    "germany": 56,
+    "n_countries": 120
+  },
+  "programmes": [
+    {
+      "code": "MPP",
+      "n": 291,
+      "pct": 66
+    },
+    {
+      "code": "MIA",
+      "n": 71,
+      "pct": 16
+    },
+    {
+      "code": "MDS",
+      "n": 15,
+      "pct": 3
+    },
+    {
+      "code": "EMPA",
+      "n": 52,
+      "pct": 12
+    },
+    {
+      "code": "PhD",
+      "n": 12,
+      "pct": 3
+    }
+  ],
+  "cohorts": [
+    {
+      "label": "2007-2016",
+      "n": 160,
+      "pct": 36
+    },
+    {
+      "label": "2017-2022",
+      "n": 165,
+      "pct": 37
+    },
+    {
+      "label": "2023-2024",
+      "n": 116,
+      "pct": 26
+    }
+  ],
+  "gender": [
+    {
+      "label": "Female",
+      "n": 188,
+      "pct": 43
+    },
+    {
+      "label": "Male",
+      "n": 224,
+      "pct": 51
+    },
+    {
+      "label": "Prefer not to say",
+      "n": 29,
+      "pct": 7
+    }
+  ],
+  "prog_year": [
+    {
+      "programme": "MPP",
+      "year": 2007,
+      "n": 7
+    },
+    {
+      "programme": "MPP",
+      "year": 2008,
+      "n": 9
+    },
+    {
+      "programme": "MPP",
+      "year": 2009,
+      "n": 8
+    },
+    {
+      "programme": "MPP",
+      "year": 2010,
+      "n": 7
+    },
+    {
+      "programme": "MPP",
+      "year": 2011,
+      "n": 13
+    },
+    {
+      "programme": "MPP",
+      "year": 2012,
+      "n": 6
+    },
+    {
+      "programme": "MPP",
+      "year": 2013,
+      "n": 9
+    },
+    {
+      "programme": "MPP",
+      "year": 2014,
+      "n": 18
+    },
+    {
+      "programme": "MPP",
+      "year": 2015,
+      "n": 17
+    },
+    {
+      "programme": "MPP",
+      "year": 2016,
+      "n": 21
+    },
+    {
+      "programme": "MPP",
+      "year": 2017,
+      "n": 17
+    },
+    {
+      "programme": "MPP",
+      "year": 2018,
+      "n": 21
+    },
+    {
+      "programme": "MPP",
+      "year": 2019,
+      "n": 23
+    },
+    {
+      "programme": "MPP",
+      "year": 2020,
+      "n": 13
+    },
+    {
+      "programme": "MPP",
+      "year": 2021,
+      "n": 19
+    },
+    {
+      "programme": "MPP",
+      "year": 2022,
+      "n": 18
+    },
+    {
+      "programme": "MPP",
+      "year": 2023,
+      "n": 32
+    },
+    {
+      "programme": "MPP",
+      "year": 2024,
+      "n": 26
+    },
+    {
+      "programme": "MIA",
+      "year": 2017,
+      "n": 2
+    },
+    {
+      "programme": "MIA",
+      "year": 2018,
+      "n": 6
+    },
+    {
+      "programme": "MIA",
+      "year": 2019,
+      "n": 4
+    },
+    {
+      "programme": "MIA",
+      "year": 2020,
+      "n": 9
+    },
+    {
+      "programme": "MIA",
+      "year": 2021,
+      "n": 6
+    },
+    {
+      "programme": "MIA",
+      "year": 2022,
+      "n": 7
+    },
+    {
+      "programme": "MIA",
+      "year": 2023,
+      "n": 12
+    },
+    {
+      "programme": "MIA",
+      "year": 2024,
+      "n": 24
+    },
+    {
+      "programme": "MDS",
+      "year": 2023,
+      "n": 4
+    },
+    {
+      "programme": "MDS",
+      "year": 2024,
+      "n": 10
+    },
+    {
+      "programme": "EMPA",
+      "year": 2010,
+      "n": 2
+    },
+    {
+      "programme": "EMPA",
+      "year": 2011,
+      "n": 4
+    },
+    {
+      "programme": "EMPA",
+      "year": 2012,
+      "n": 2
+    },
+    {
+      "programme": "EMPA",
+      "year": 2013,
+      "n": 5
+    },
+    {
+      "programme": "EMPA",
+      "year": 2014,
+      "n": 5
+    },
+    {
+      "programme": "EMPA",
+      "year": 2015,
+      "n": 4
+    },
+    {
+      "programme": "EMPA",
+      "year": 2016,
+      "n": 3
+    },
+    {
+      "programme": "EMPA",
+      "year": 2017,
+      "n": 3
+    },
+    {
+      "programme": "EMPA",
+      "year": 2018,
+      "n": 7
+    },
+    {
+      "programme": "EMPA",
+      "year": 2019,
+      "n": 2
+    },
+    {
+      "programme": "EMPA",
+      "year": 2021,
+      "n": 3
+    },
+    {
+      "programme": "EMPA",
+      "year": 2022,
+      "n": 4
+    },
+    {
+      "programme": "EMPA",
+      "year": 2023,
+      "n": 2
+    },
+    {
+      "programme": "EMPA",
+      "year": 2024,
+      "n": 6
+    }
+  ],
+  "residence_top": [
+    {
+      "country": "Germany",
+      "n": 247,
+      "pct": 56
+    },
+    {
+      "country": "Belgium",
+      "n": 22,
+      "pct": 5
+    },
+    {
+      "country": "United States",
+      "n": 15,
+      "pct": 3
+    },
+    {
+      "country": "Brazil",
+      "n": 9,
+      "pct": 2
+    },
+    {
+      "country": "France",
+      "n": 9,
+      "pct": 2
+    },
+    {
+      "country": "India",
+      "n": 9,
+      "pct": 2
+    },
+    {
+      "country": "Austria",
+      "n": 8,
+      "pct": 2
+    },
+    {
+      "country": "Italy",
+      "n": 8,
+      "pct": 2
+    },
+    {
+      "country": "Mexico",
+      "n": 7,
+      "pct": 2
+    },
+    {
+      "country": "Switzerland",
+      "n": 7,
+      "pct": 2
+    },
+    {
+      "country": "Colombia",
+      "n": 6,
+      "pct": 1
+    },
+    {
+      "country": "Netherlands",
+      "n": 6,
+      "pct": 1
+    }
+  ],
+  "reside_in_birth_country": 50
+}

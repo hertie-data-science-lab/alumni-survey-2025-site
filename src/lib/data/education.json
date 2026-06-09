@@ -1,0 +1,339 @@
+{
+  "satisfaction": {
+    "levels": ["0-1 = Very low", "2-3", "4-5", "6-7", "8-9", "10 = Very high"],
+    "positive": ["6-7", "8-9", "10 = Very high"],
+    "groups": [
+      {
+        "group": "All alumni",
+        "dim": "all",
+        "n": 427,
+        "pct": [1, 2, 7, 33, 51, 6],
+        "positive": 90
+      },
+      {
+        "group": "MPP",
+        "dim": "programme",
+        "n": 290,
+        "pct": [1, 1, 5, 30, 56, 7],
+        "positive": 93
+      },
+      {
+        "group": "MIA",
+        "dim": "programme",
+        "n": 71,
+        "pct": [0, 4, 10, 47, 39, 0],
+        "positive": 86
+      },
+      {
+        "group": "MDS",
+        "dim": "programme",
+        "n": 14,
+        "pct": [0, 14, 21, 29, 22, 14],
+        "positive": 65
+      },
+      {
+        "group": "EMPA",
+        "dim": "programme",
+        "n": 52,
+        "pct": [0, 2, 6, 29, 52, 11],
+        "positive": 92
+      },
+      {
+        "group": "2007-2016",
+        "dim": "cohort",
+        "n": 147,
+        "pct": [2, 1, 4, 29, 57, 7],
+        "positive": 93
+      },
+      {
+        "group": "2017-2022",
+        "dim": "cohort",
+        "n": 164,
+        "pct": [0, 2, 6, 31, 56, 5],
+        "positive": 92
+      },
+      {
+        "group": "2023-2024",
+        "dim": "cohort",
+        "n": 116,
+        "pct": [0, 4, 10, 41, 38, 7],
+        "positive": 86
+      }
+    ]
+  },
+  "recommend": {
+    "overall": 83,
+    "breakdown": [
+      {
+        "group": "All alumni",
+        "dim": "all",
+        "n": 426,
+        "pct": [17, 83],
+        "positive": 83
+      },
+      {
+        "group": "MPP",
+        "dim": "programme",
+        "n": 289,
+        "pct": [15, 85],
+        "positive": 85
+      },
+      {
+        "group": "MIA",
+        "dim": "programme",
+        "n": 71,
+        "pct": [30, 70],
+        "positive": 70
+      },
+      {
+        "group": "MDS",
+        "dim": "programme",
+        "n": 14,
+        "pct": [43, 57],
+        "positive": 57
+      },
+      {
+        "group": "EMPA",
+        "dim": "programme",
+        "n": 52,
+        "pct": [10, 90],
+        "positive": 90
+      },
+      {
+        "group": "2007-2016",
+        "dim": "cohort",
+        "n": 147,
+        "pct": [10, 90],
+        "positive": 90
+      },
+      {
+        "group": "2017-2022",
+        "dim": "cohort",
+        "n": 163,
+        "pct": [17, 83],
+        "positive": 83
+      },
+      {
+        "group": "2023-2024",
+        "dim": "cohort",
+        "n": 116,
+        "pct": [27, 73],
+        "positive": 73
+      }
+    ]
+  },
+  "choose_again": [
+    {
+      "label": "Hertie School",
+      "likely": 77,
+      "n": 426
+    },
+    {
+      "label": "MPP",
+      "likely": 76,
+      "n": 291
+    },
+    {
+      "label": "MIA",
+      "likely": 59,
+      "n": 71
+    },
+    {
+      "label": "MDS",
+      "likely": 60,
+      "n": 15
+    },
+    {
+      "label": "EMPA",
+      "likely": 87,
+      "n": 53
+    }
+  ],
+  "aspects": [
+    {
+      "aspect": "Quality of teaching",
+      "values": [
+        {
+          "programme": "MPP",
+          "mean": 4.21
+        },
+        {
+          "programme": "MIA",
+          "mean": 3.9
+        },
+        {
+          "programme": "MDS",
+          "mean": 3.07
+        },
+        {
+          "programme": "EMPA",
+          "mean": 4.34
+        }
+      ]
+    },
+    {
+      "aspect": "Thesis supervision",
+      "values": [
+        {
+          "programme": "MPP",
+          "mean": 3.57
+        },
+        {
+          "programme": "MIA",
+          "mean": 3.62
+        },
+        {
+          "programme": "MDS",
+          "mean": 3.27
+        },
+        {
+          "programme": "EMPA",
+          "mean": 3.85
+        }
+      ]
+    },
+    {
+      "aspect": "Practice / policy orientation",
+      "values": [
+        {
+          "programme": "MPP",
+          "mean": 3.79
+        },
+        {
+          "programme": "MIA",
+          "mean": 3.61
+        },
+        {
+          "programme": "MDS",
+          "mean": 2.93
+        },
+        {
+          "programme": "EMPA",
+          "mean": 4.13
+        }
+      ]
+    },
+    {
+      "aspect": "Research support",
+      "values": [
+        {
+          "programme": "MPP",
+          "mean": 3.54
+        },
+        {
+          "programme": "MIA",
+          "mean": 3.32
+        },
+        {
+          "programme": "MDS",
+          "mean": 2.73
+        },
+        {
+          "programme": "EMPA",
+          "mean": 3.91
+        }
+      ]
+    }
+  ],
+  "courses": {
+    "MPP": {
+      "denom": 287,
+      "items": [
+        {
+          "label": "Public Management",
+          "pct": 40
+        },
+        {
+          "label": "The Policy Process",
+          "pct": 36
+        },
+        {
+          "label": "Statistics I (prev. Applied Quantitative Methods)",
+          "pct": 29
+        },
+        {
+          "label": "Economics I (prev. Applied Economic Analysis)",
+          "pct": 26
+        },
+        {
+          "label": "Statistics II",
+          "pct": 26
+        },
+        {
+          "label": "Economics II",
+          "pct": 22
+        },
+        {
+          "label": "Leadership and Management",
+          "pct": 21
+        },
+        {
+          "label": "Law and Governance",
+          "pct": 19
+        }
+      ]
+    },
+    "MIA": {
+      "denom": 70,
+      "items": [
+        {
+          "label": "International Negotiation (prev. International Conflict Management)",
+          "pct": 41
+        },
+        {
+          "label": "Statistics I (prev. Applied Quantitative Methods)",
+          "pct": 29
+        },
+        {
+          "label": "International Law",
+          "pct": 20
+        },
+        {
+          "label": "Economics I (prev. Applied Economic Analysis)",
+          "pct": 19
+        },
+        {
+          "label": "International Organisazion",
+          "pct": 16
+        },
+        {
+          "label": "Global Governance",
+          "pct": 14
+        },
+        {
+          "label": "Statistics II",
+          "pct": 13
+        },
+        {
+          "label": "Economics II",
+          "pct": 9
+        },
+        {
+          "label": "Global Politics",
+          "pct": 7
+        }
+      ]
+    },
+    "MDS": {
+      "denom": 14,
+      "items": [
+        {
+          "label": "Machine Learning",
+          "pct": 50
+        },
+        {
+          "label": "Deep Learning",
+          "pct": 43
+        },
+        {
+          "label": "Mathematics for Data Science",
+          "pct": 29
+        },
+        {
+          "label": "Economics I",
+          "pct": 21
+        }
+      ]
+    }
+  }
+}

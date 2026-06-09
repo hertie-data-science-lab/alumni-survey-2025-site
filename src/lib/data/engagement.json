@@ -1,0 +1,131 @@
+{
+  "channels": [
+    {
+      "label": "Alumni mailing list",
+      "pct": 80
+    },
+    {
+      "label": "Alumni & Students LinkedIn group",
+      "pct": 73
+    },
+    {
+      "label": "Regional Chapter LinkedIn groups",
+      "pct": 39
+    }
+  ],
+  "activities": [
+    {
+      "label": "Personal contact with fellow alumni",
+      "active": 94,
+      "pct": [6, 32, 34, 28],
+      "n": 405
+    },
+    {
+      "label": "Following Hertie on social media",
+      "active": 79,
+      "pct": [21, 50, 23, 6],
+      "n": 404
+    },
+    {
+      "label": "Attending events",
+      "active": 63,
+      "pct": [37, 53, 9, 1],
+      "n": 404
+    },
+    {
+      "label": "Contact with students, faculty or staff",
+      "active": 56,
+      "pct": [44, 40, 11, 5],
+      "n": 405
+    },
+    {
+      "label": "Engaging with the Hertie website",
+      "active": 51,
+      "pct": [49, 43, 7, 1],
+      "n": 403
+    },
+    {
+      "label": "Participating in a regional chapter",
+      "active": 40,
+      "pct": [60, 31, 6, 3],
+      "n": 404
+    },
+    {
+      "label": "Volunteering (speaker, mentor, chapter lead)",
+      "active": 30,
+      "pct": [70, 20, 7, 3],
+      "n": 404
+    }
+  ],
+  "activity_levels": ["Never", "Occasionally", "Regularly", "Very often"],
+  "benefits": [
+    {
+      "label": "Connections and friendships I have with other alumni",
+      "pct": 69
+    },
+    {
+      "label": "The benefits of the education I received",
+      "pct": 58
+    },
+    {
+      "label": "The opportunity to be a part of Hertie’s network / community",
+      "pct": 52
+    },
+    {
+      "label": "Connections to professionals and thought leaders",
+      "pct": 28
+    },
+    {
+      "label": "My sense of pride in what I accomplished while there",
+      "pct": 17
+    },
+    {
+      "label": "Access to intellectual resources Hertie provides",
+      "pct": 15
+    }
+  ],
+  "barriers": [
+    {
+      "label": "Time / other commitments",
+      "pct": 22
+    },
+    {
+      "label": "Geographical distance",
+      "pct": 17
+    },
+    {
+      "label": "Value (cost as compared to benefit)",
+      "pct": 8
+    },
+    {
+      "label": "Not interested",
+      "pct": 4
+    }
+  ],
+  "content": [
+    {
+      "label": "In-person networking events",
+      "pct": 64
+    },
+    {
+      "label": "Alumni-faculty events",
+      "pct": 51
+    },
+    {
+      "label": "Mentorship opportunities",
+      "pct": 45
+    },
+    {
+      "label": "Alumni-student events",
+      "pct": 31
+    },
+    {
+      "label": "Online networking events",
+      "pct": 26
+    },
+    {
+      "label": "Alumni success-stories",
+      "pct": 22
+    }
+  ]
+}

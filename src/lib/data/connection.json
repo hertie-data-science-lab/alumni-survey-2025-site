@@ -1,0 +1,380 @@
+{
+  "perception": {
+    "levels": ["0-1 = Not positive", "2-3", "4-5", "6-7", "8-9", "10 = Very positive"],
+    "positive": ["6-7", "8-9", "10 = Very positive"],
+    "groups": [
+      {
+        "group": "All alumni",
+        "dim": "all",
+        "n": 425,
+        "pct": [0, 2, 5, 28, 52, 13],
+        "positive": 93
+      },
+      {
+        "group": "MPP",
+        "dim": "programme",
+        "n": 288,
+        "pct": [0, 1, 5, 26, 55, 13],
+        "positive": 94
+      },
+      {
+        "group": "MIA",
+        "dim": "programme",
+        "n": 71,
+        "pct": [1, 3, 9, 39, 45, 3],
+        "positive": 87
+      },
+      {
+        "group": "MDS",
+        "dim": "programme",
+        "n": 14,
+        "pct": [0, 21, 7, 29, 43, 0],
+        "positive": 72
+      },
+      {
+        "group": "EMPA",
+        "dim": "programme",
+        "n": 52,
+        "pct": [0, 0, 2, 19, 50, 29],
+        "positive": 98
+      },
+      {
+        "group": "2007-2016",
+        "dim": "cohort",
+        "n": 145,
+        "pct": [0, 2, 2, 22, 58, 16],
+        "positive": 96
+      },
+      {
+        "group": "2017-2022",
+        "dim": "cohort",
+        "n": 164,
+        "pct": [0, 1, 5, 28, 51, 15],
+        "positive": 94
+      },
+      {
+        "group": "2023-2024",
+        "dim": "cohort",
+        "n": 116,
+        "pct": [1, 3, 9, 35, 47, 5],
+        "positive": 87
+      }
+    ]
+  },
+  "belonging": {
+    "levels": ["Strongly disagree", "Somewhat disagree", "Neither/nor", "Somewhat agree", "Strongly agree"],
+    "positive": ["Somewhat agree", "Strongly agree"],
+    "groups": [
+      {
+        "group": "All alumni",
+        "dim": "all",
+        "n": 427,
+        "pct": [3, 12, 14, 47, 24],
+        "positive": 71
+      },
+      {
+        "group": "MPP",
+        "dim": "programme",
+        "n": 290,
+        "pct": [2, 12, 11, 48, 27],
+        "positive": 75
+      },
+      {
+        "group": "MIA",
+        "dim": "programme",
+        "n": 71,
+        "pct": [7, 14, 20, 41, 18],
+        "positive": 59
+      },
+      {
+        "group": "MDS",
+        "dim": "programme",
+        "n": 14,
+        "pct": [21, 7, 22, 36, 14],
+        "positive": 50
+      },
+      {
+        "group": "EMPA",
+        "dim": "programme",
+        "n": 52,
+        "pct": [0, 8, 19, 52, 21],
+        "positive": 73
+      },
+      {
+        "group": "2007-2016",
+        "dim": "cohort",
+        "n": 147,
+        "pct": [3, 9, 9, 52, 27],
+        "positive": 79
+      },
+      {
+        "group": "2017-2022",
+        "dim": "cohort",
+        "n": 164,
+        "pct": [1, 14, 13, 45, 27],
+        "positive": 72
+      },
+      {
+        "group": "2023-2024",
+        "dim": "cohort",
+        "n": 116,
+        "pct": [7, 10, 23, 43, 17],
+        "positive": 60
+      }
+    ]
+  },
+  "community": [
+    {
+      "label": "I feel a sense of belonging to the Hertie alumni community",
+      "pct": 71,
+      "n": 427,
+      "breakdown": [
+        {
+          "group": "All alumni",
+          "dim": "all",
+          "n": 427,
+          "pct": [3, 12, 14, 47, 24],
+          "positive": 71
+        },
+        {
+          "group": "MPP",
+          "dim": "programme",
+          "n": 290,
+          "pct": [2, 12, 11, 48, 27],
+          "positive": 75
+        },
+        {
+          "group": "MIA",
+          "dim": "programme",
+          "n": 71,
+          "pct": [7, 14, 20, 41, 18],
+          "positive": 59
+        },
+        {
+          "group": "MDS",
+          "dim": "programme",
+          "n": 14,
+          "pct": [21, 7, 22, 36, 14],
+          "positive": 50
+        },
+        {
+          "group": "EMPA",
+          "dim": "programme",
+          "n": 52,
+          "pct": [0, 8, 19, 52, 21],
+          "positive": 73
+        },
+        {
+          "group": "2007-2016",
+          "dim": "cohort",
+          "n": 147,
+          "pct": [3, 9, 9, 52, 27],
+          "positive": 79
+        },
+        {
+          "group": "2017-2022",
+          "dim": "cohort",
+          "n": 164,
+          "pct": [1, 14, 13, 45, 27],
+          "positive": 72
+        },
+        {
+          "group": "2023-2024",
+          "dim": "cohort",
+          "n": 116,
+          "pct": [7, 10, 23, 43, 17],
+          "positive": 60
+        }
+      ]
+    },
+    {
+      "label": "Connections from Hertie are important to my professional life today",
+      "pct": 40,
+      "n": 427,
+      "breakdown": [
+        {
+          "group": "All alumni",
+          "dim": "all",
+          "n": 427,
+          "pct": [15, 21, 24, 29, 11],
+          "positive": 40
+        },
+        {
+          "group": "MPP",
+          "dim": "programme",
+          "n": 290,
+          "pct": [14, 20, 25, 29, 12],
+          "positive": 41
+        },
+        {
+          "group": "MIA",
+          "dim": "programme",
+          "n": 71,
+          "pct": [18, 23, 25, 24, 10],
+          "positive": 34
+        },
+        {
+          "group": "MDS",
+          "dim": "programme",
+          "n": 14,
+          "pct": [7, 7, 29, 43, 14],
+          "positive": 57
+        },
+        {
+          "group": "EMPA",
+          "dim": "programme",
+          "n": 52,
+          "pct": [15, 29, 19, 33, 4],
+          "positive": 37
+        },
+        {
+          "group": "2007-2016",
+          "dim": "cohort",
+          "n": 147,
+          "pct": [16, 24, 22, 28, 10],
+          "positive": 38
+        },
+        {
+          "group": "2017-2022",
+          "dim": "cohort",
+          "n": 164,
+          "pct": [13, 24, 19, 31, 13],
+          "positive": 44
+        },
+        {
+          "group": "2023-2024",
+          "dim": "cohort",
+          "n": 116,
+          "pct": [15, 15, 34, 27, 9],
+          "positive": 36
+        }
+      ]
+    },
+    {
+      "label": "Connections from Hertie are important to my social life today",
+      "pct": 67,
+      "n": 427,
+      "breakdown": [
+        {
+          "group": "All alumni",
+          "dim": "all",
+          "n": 427,
+          "pct": [7, 14, 12, 28, 39],
+          "positive": 67
+        },
+        {
+          "group": "MPP",
+          "dim": "programme",
+          "n": 290,
+          "pct": [6, 11, 10, 30, 43],
+          "positive": 73
+        },
+        {
+          "group": "MIA",
+          "dim": "programme",
+          "n": 71,
+          "pct": [6, 18, 17, 27, 32],
+          "positive": 59
+        },
+        {
+          "group": "MDS",
+          "dim": "programme",
+          "n": 14,
+          "pct": [7, 7, 0, 29, 57],
+          "positive": 86
+        },
+        {
+          "group": "EMPA",
+          "dim": "programme",
+          "n": 52,
+          "pct": [17, 25, 21, 21, 16],
+          "positive": 37
+        },
+        {
+          "group": "2007-2016",
+          "dim": "cohort",
+          "n": 147,
+          "pct": [9, 16, 15, 26, 34],
+          "positive": 60
+        },
+        {
+          "group": "2017-2022",
+          "dim": "cohort",
+          "n": 164,
+          "pct": [6, 16, 10, 29, 39],
+          "positive": 68
+        },
+        {
+          "group": "2023-2024",
+          "dim": "cohort",
+          "n": 116,
+          "pct": [6, 10, 11, 29, 44],
+          "positive": 73
+        }
+      ]
+    },
+    {
+      "label": "I would like to be more involved with Hertie than I am now",
+      "pct": 68,
+      "n": 427,
+      "breakdown": [
+        {
+          "group": "All alumni",
+          "dim": "all",
+          "n": 427,
+          "pct": [2, 6, 24, 45, 23],
+          "positive": 68
+        },
+        {
+          "group": "MPP",
+          "dim": "programme",
+          "n": 290,
+          "pct": [1, 6, 24, 44, 25],
+          "positive": 69
+        },
+        {
+          "group": "MIA",
+          "dim": "programme",
+          "n": 71,
+          "pct": [4, 7, 33, 38, 18],
+          "positive": 56
+        },
+        {
+          "group": "MDS",
+          "dim": "programme",
+          "n": 14,
+          "pct": [7, 0, 22, 57, 14],
+          "positive": 71
+        },
+        {
+          "group": "EMPA",
+          "dim": "programme",
+          "n": 52,
+          "pct": [0, 6, 17, 56, 21],
+          "positive": 77
+        },
+        {
+          "group": "2007-2016",
+          "dim": "cohort",
+          "n": 147,
+          "pct": [1, 6, 22, 49, 22],
+          "positive": 71
+        },
+        {
+          "group": "2017-2022",
+          "dim": "cohort",
+          "n": 164,
+          "pct": [3, 4, 28, 41, 24],
+          "positive": 65
+        },
+        {
+          "group": "2023-2024",
+          "dim": "cohort",
+          "n": 116,
+          "pct": [2, 7, 22, 46, 23],
+          "positive": 69
+        }
+      ]
+    }
+  ]
+}
