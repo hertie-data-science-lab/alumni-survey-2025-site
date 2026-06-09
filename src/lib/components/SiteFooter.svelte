@@ -41,7 +41,7 @@
 
 		<p class="footer__legal">
 			© 2025 Hertie School. Source: Hertie School Alumni Survey 2025. Percentages are reported as
-			whole numbers and exclude non-responses; small subgroups (MDS, PhD) should be read with
+			whole numbers and exclude non-responses; small subgroups (such as MDS) should be read with
 			caution.
 		</p>
 	</div>
