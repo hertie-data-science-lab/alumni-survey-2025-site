@@ -69,13 +69,6 @@
 	</div>
 
 	<div class="cols-2">
-		<Figure title="Alumni work across every sector" subtitle="Sector of current employment, by programme">
-			<SectorDonuts
-				groups={career.sector_current.groups.filter((g) => g.group !== 'All alumni')}
-				levels={career.sector_current.levels}
-				colors={SECTOR_COLORS}
-			/>
-		</Figure>
 		<div class="aside-prose">
 			<p>
 				Hertie graduates work across all four sectors, but each programme leans toward its
@@ -83,6 +76,13 @@
 				MPP and MDS graduates are spread most evenly across the four.
 			</p>
 		</div>
+		<Figure title="Alumni work across every sector" subtitle="Sector of current employment, by programme">
+			<SectorDonuts
+				groups={career.sector_current.groups.filter((g) => g.group !== 'All alumni')}
+				levels={career.sector_current.levels}
+				colors={SECTOR_COLORS}
+			/>
+		</Figure>
 	</div>
 
 	<div class="cols-2">
@@ -104,12 +104,6 @@
 	</div>
 
 	<div class="cols-2">
-		<DivergingFigure
-			title="Most are satisfied with their current job"
-			subtitle="Satisfaction with the position they have reached"
-			data={career.job_satisfaction}
-			legendLabels={['Very dissatisfied', 'Dissatisfied', 'Neutral', 'Satisfied', 'Very satisfied']}
-		/>
 		<div class="aside-prose">
 			<KeyFigure value={career.job_satisfaction.groups[0].positive} unit="%" label="are satisfied or very satisfied with their current job" tone="blue" />
 			<p>
@@ -118,6 +112,12 @@
 				about <strong>{within3}%</strong> found their first job within three months of graduating.
 			</p>
 		</div>
+		<DivergingFigure
+			title="Most are satisfied with their current job"
+			subtitle="Satisfaction with the position they have reached"
+			data={career.job_satisfaction}
+			legendLabels={['Very dissatisfied', 'Dissatisfied', 'Neutral', 'Satisfied', 'Very satisfied']}
+		/>
 	</div>
 
 	<div class="cols-2">
@@ -129,25 +129,19 @@
 			<RankedBars items={foundItems} suffix="%" marginLeft={210} rowHeight={42} wrap />
 		</Figure>
 		<div class="aside-prose">
+			<KeyFigure value={hertieFirstShare} unit="%" label="found their first job through a Hertie-linked route" />
 			<p>
-				Hertie can claim at least partial credit for many first jobs. The routes the School
-				helps create — internships and the Professional Year, contacts with alumni and staff,
-				Hertie School Connect and the alumni job newsletter (shown in
-				<span style="color: var(--red); font-weight: 600;">red</span>) — together account for
-				roughly <strong>{hertieFirstShare}%</strong> of first jobs. Personal networks and online
-				job boards make up most of the rest.
+				Hertie can claim at least partial credit for many first jobs: internships and the
+				Professional Year, contacts with alumni and staff, Hertie School Connect and the alumni
+				job newsletter (shown in <span style="color: var(--red); font-weight: 600;">red</span>)
+				together make up that share. If anything it is an undercount — the single most common
+				route is friends, acquaintances and relatives, and a great many of those connections
+				were themselves made at Hertie.
 			</p>
 		</div>
 	</div>
 
 	<div class="cols-2">
-		<Figure
-			title="What mattered for getting hired"
-			subtitle="Share rating each factor important for their first job"
-			n={career.job_satisfaction.groups[0].n}
-		>
-			<RankedBars items={hiringItems} suffix="%" marginLeft={230} rowHeight={28} color="var(--red)" />
-		</Figure>
 		<div class="aside-prose">
 			<p>
 				When it comes to getting hired, grades matter far less than students tend to believe.
@@ -156,6 +150,13 @@
 				more than marks or the choice of thesis topic.
 			</p>
 		</div>
+		<Figure
+			title="What mattered for getting hired"
+			subtitle="Share rating each factor important for their first job"
+			n={career.job_satisfaction.groups[0].n}
+		>
+			<RankedBars items={hiringItems} suffix="%" marginLeft={230} rowHeight={28} color="var(--red)" />
+		</Figure>
 	</div>
 
 	<Takeaway>
