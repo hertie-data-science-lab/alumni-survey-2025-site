@@ -23,7 +23,17 @@
 		current: career.salary_mean.recent.current[p]
 	}));
 
-	const foundItems = career.found.current.items.map((d) => ({ label: d.label, value: d.pct }));
+	// First-job channels. Routes the School helps create are shown in red, since
+	// Hertie can claim at least partial credit for them.
+	const HERTIE_ROUTE = /Hertie School|Professional Year|Internship|newsletter/i;
+	const foundItems = career.found.first.items.map((d) => ({
+		label: d.label,
+		value: d.pct,
+		color: HERTIE_ROUTE.test(d.label) ? 'var(--red)' : 'var(--ink-faint)'
+	}));
+	const hertieFirstShare = career.found.first.items
+		.filter((d) => HERTIE_ROUTE.test(d.label))
+		.reduce((s, d) => s + d.pct, 0);
 	const hiringItems = career.hiring.map((d) => ({ label: d.label, value: d.pct }));
 
 	const sl = career.search_length.groups[0];
@@ -112,12 +122,25 @@
 
 	<div class="cols-2">
 		<Figure
-			title="How alumni found their current job"
+			title="How alumni found their first job"
 			subtitle="% naming each channel"
-			n={career.found.current.n}
+			n={career.found.first.n}
 		>
-			<RankedBars items={foundItems} suffix="%" marginLeft={210} rowHeight={42} color="var(--prog-empa)" wrap />
+			<RankedBars items={foundItems} suffix="%" marginLeft={210} rowHeight={42} wrap />
 		</Figure>
+		<div class="aside-prose">
+			<p>
+				Hertie can claim at least partial credit for many first jobs. The routes the School
+				helps create — internships and the Professional Year, contacts with alumni and staff,
+				Hertie School Connect and the alumni job newsletter (shown in
+				<span style="color: var(--red); font-weight: 600;">red</span>) — together account for
+				roughly <strong>{hertieFirstShare}%</strong> of first jobs. Personal networks and online
+				job boards make up most of the rest.
+			</p>
+		</div>
+	</div>
+
+	<div class="cols-2">
 		<Figure
 			title="What mattered for getting hired"
 			subtitle="Share rating each factor important for their first job"
@@ -125,6 +148,14 @@
 		>
 			<RankedBars items={hiringItems} suffix="%" marginLeft={230} rowHeight={28} color="var(--red)" />
 		</Figure>
+		<div class="aside-prose">
+			<p>
+				When it comes to getting hired, grades matter far less than students tend to believe.
+				What employers reward most are alumni's <strong>skills</strong> and
+				<strong>professional experience</strong> — practical capability opens the first door
+				more than marks or the choice of thesis topic.
+			</p>
+		</div>
 	</div>
 
 	<Takeaway>
